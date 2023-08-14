@@ -1,6 +1,6 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import DirectivesQuestComponent from './directives-quest.component';
+import { DirectivesQuestComponent } from './directives-quest.component';
 
 describe('DirectivesQuestComponent', () => {
   let component: DirectivesQuestComponent;

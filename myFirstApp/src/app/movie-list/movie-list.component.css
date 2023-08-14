@@ -1,0 +1,42 @@
+.movies-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: monospace;
+  border: 2px solid black;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
+    rgba(0, 0, 0, 0.22) 0px 10px 10px;
+  border-radius: 15px;
+  max-width: 500px;
+  margin-bottom: 160px;
+}
+
+.movies-wrapper h1 {
+  margin: 24px;
+}
+
+.list {
+    padding: 0  ;
+}
+.list li {
+  list-style: none;
+  border: 1px solid black;
+  padding: 7px;
+  border-radius: 6px;
+  margin: 9px 0;
+  cursor: pointer;
+  
+}
+
+button {
+  all: unset;
+  padding: 12px;
+  border-radius: 20px;
+  border: 1px solid black;
+  margin: 16px 0;
+  background-color: lightgrey;
+  cursor: pointer;
+  font-family: monospace;
+  margin: 12px 56px;
+}

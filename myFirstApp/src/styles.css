@@ -6,3 +6,10 @@ body {
     justify-content: center;
     align-items: center;
 }
+
+.highlight {
+    color: rgb(73, 73, 94);
+    transform: scale(1.25);
+    transition: 0.3s;
+  }
+  
