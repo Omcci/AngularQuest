@@ -10,6 +10,12 @@ import { HighlightDirective } from './highlight.directive';
 import { ShowMoviesDirective } from './show-movies.directive';
 import { MovieListComponent } from './movie-list/movie-list.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ROUTES } from './app.routes';
+import { RouterModule } from '@angular/router';
+import { MenuComponent } from './menu/menu.component';
+import { CocktailListComponent } from './cocktail-list/cocktail-list.component';
+import { CocktailService } from './cocktail.service';
+
 
 
 @NgModule({
@@ -20,15 +26,19 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     HighlightDirective,
     ShowMoviesDirective,
     MovieListComponent,
+    MenuComponent,
+    CocktailListComponent,
      
   ],
   imports: [
     BrowserModule,
     FormsModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    RouterModule.forRoot(ROUTES)
+
 
   ],
-  providers: [],
+  providers: [CocktailService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

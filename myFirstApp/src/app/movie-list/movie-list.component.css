@@ -9,7 +9,7 @@
     rgba(0, 0, 0, 0.22) 0px 10px 10px;
   border-radius: 15px;
   max-width: 500px;
-  margin-bottom: 160px;
+  margin: 160px 0;
 }
 
 .movies-wrapper h1 {

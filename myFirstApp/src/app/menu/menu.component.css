@@ -1,0 +1,23 @@
+.menu-container {
+    display: flex;
+    font-family: monospace;
+}
+
+.menu-container li {
+    list-style: none;
+    margin: 8px;
+    font-size: xx-large;
+}
+
+
+.menu-container li a{
+    text-decoration: none;
+    transform: scale(0.5);
+    transition: 0.2s;
+}
+
+.menu-container li a:hover{
+color: lightgrey; 
+
+   
+}
