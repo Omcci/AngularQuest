@@ -6,16 +6,16 @@ import { Cocktail } from '../cocktail.model';
 @Component({
   selector: 'app-cocktail-list',
   templateUrl: './cocktail-list.component.html',
-  styleUrls: ['./cocktail-list.component.css']
+  styleUrls: ['./cocktail-list.component.css'],
 })
 export class CocktailListComponent implements OnInit {
   cocktails: Cocktail[] = [];
 
-  constructor(public cocktailService: CocktailService) { }
+  constructor(public cocktailService: CocktailService) {}
 
   ngOnInit(): void {
-    this.cocktailService.getCocktails().subscribe(c => {
-      this.cocktails = c
-    })
+    this.cocktailService.getCocktails().subscribe((c) => {
+      this.cocktails = c;
+    });
   }
 }

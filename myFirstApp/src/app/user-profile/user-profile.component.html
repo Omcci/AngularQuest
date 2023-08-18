@@ -1,17 +1,16 @@
 <div class="wrapper">
   <div class="card-container">
-    
-      <img [src]="user.photo" [alt]="user.name" />
-      <p>{{ user.firstName }} {{ user.name }}</p>
-      <span *ngIf="user.showAge">{{ user.age }}</span>
-    <p> "{{ user.quote }}" {{ user.firstName }} - 2023 </p>
-     
-    
+    <img [src]="user.photo" [alt]="user.name" />
+    <p>{{ user.firstName }} {{ user.name }}</p>
+    <span *ngIf="user.showAge">{{ user.age }}</span>
+    <p>"{{ user.quote }}" {{ user.firstName }} - 2023</p>
   </div>
-
   <div class="container">
-    <input type="text" [(ngModel)]="user.quote" placeholder="Type your quote here" />
-
+    <input
+      type="text"
+      [(ngModel)]="user.quote"
+      placeholder="Type your quote here"
+    />
     <button (click)="toggleAge()">Hide the age</button>
   </div>
 </div>

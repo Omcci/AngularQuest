@@ -2,7 +2,6 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
 
-
 import { AppComponent } from './app.component';
 import { UserProfileComponent } from './user-profile/user-profile.component';
 import { DirectivesQuestComponent } from './directives-quest/directives-quest.component';
@@ -17,8 +16,6 @@ import { CocktailListComponent } from './cocktail-list/cocktail-list.component';
 import { CocktailService } from './cocktail.service';
 import { HttpClientModule } from '@angular/common/http';
 
-
-
 @NgModule({
   declarations: [
     AppComponent,
@@ -29,18 +26,15 @@ import { HttpClientModule } from '@angular/common/http';
     MovieListComponent,
     MenuComponent,
     CocktailListComponent,
-     
   ],
   imports: [
     BrowserModule,
     FormsModule,
     BrowserAnimationsModule,
     RouterModule.forRoot(ROUTES),
-    HttpClientModule
-
-
+    HttpClientModule,
   ],
   providers: [CocktailService],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

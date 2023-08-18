@@ -1,13 +1,14 @@
 <!-- cocktail-list.component.html -->
-    <ul>
-        <div  *ngFor="let cocktail of cocktails">
-
-        <li class="cocktail-container">
-          <h2>{{ cocktail.name }}</h2>
-          <p>Prix: {{ cocktail.price }}€</p>
-          <img class="cocktail-image" [src]="cocktail.img" alt="{{ cocktail.name }}">
-        </li>
-    </div>
-
-      </ul>
-      
+<ul>
+  <div *ngFor="let cocktail of cocktails">
+    <li class="cocktail-container">
+      <h2>{{ cocktail.name }}</h2>
+      <p>Prix: {{ cocktail.price }}€</p>
+      <img
+        class="cocktail-image"
+        [src]="cocktail.img"
+        alt="{{ cocktail.name }}"
+      />
+    </li>
+  </div>
+</ul>

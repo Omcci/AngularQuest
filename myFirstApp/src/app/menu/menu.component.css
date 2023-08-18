@@ -2,14 +2,14 @@
   display: flex;
   font-family: monospace;
   justify-content: center;
-  
+
   box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px,
     rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
   position: fixed;
   background-color: white;
   right: 0;
-  top: 0; 
-  left: 0; 
+  top: 0;
+  left: 0;
   z-index: 1000;
 }
 

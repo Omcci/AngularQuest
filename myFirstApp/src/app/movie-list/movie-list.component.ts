@@ -1,6 +1,11 @@
 import { Component } from '@angular/core';
-import { trigger, state, style, animate, transition } from '@angular/animations';
-
+import {
+  trigger,
+  state,
+  style,
+  animate,
+  transition,
+} from '@angular/animations';
 
 @Component({
   selector: 'app-movie-list',
@@ -10,11 +15,9 @@ import { trigger, state, style, animate, transition } from '@angular/animations'
   animations: [
     trigger('fade', [
       state('void', style({ opacity: 0 })),
-      transition(':enter, :leave', [
-        animate(500)
-      ])
-    ])
-  ]
+      transition(':enter, :leave', [animate(500)]),
+    ]),
+  ],
 })
 export class MovieListComponent {
   movies = [
@@ -25,12 +28,8 @@ export class MovieListComponent {
     { name: 'Star Wars [Film Series]' },
     { name: 'Rear Window (1954)' },
     { name: 'Citizen Kane (1941)' },
-    //... autres films
   ];
-  showMoviesValue = true; // 
-
-  
-
+  showMoviesValue = true; //
 
   isFirst(index: number): boolean {
     return index === 0;

@@ -1,11 +1,14 @@
 <div class="container">
-    <div class="movies-wrapper">
-        <h1>Favorite movies</h1>
-        <ul class="list" *appShowMovies="showMoviesValue" @fade>
-            <li *ngFor="let movie of movies; let i = index" [appHighlight]="isFirst(i)">
-                {{ movie.name }}
-          </li>
-        </ul>
-        <button (click)="toggleMoviesDisplay()">Toggle Movies Display</button>
-    </div>
+  <div class="movies-wrapper">
+    <h1>Favorite movies</h1>
+    <ul class="list" *appShowMovies="showMoviesValue" @fade>
+      <li
+        *ngFor="let movie of movies; let i = index"
+        [appHighlight]="isFirst(i)"
+      >
+        {{ movie.name }}
+      </li>
+    </ul>
+    <button (click)="toggleMoviesDisplay()">Toggle Movies Display</button>
+  </div>
 </div>

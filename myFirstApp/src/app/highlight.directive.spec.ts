@@ -8,11 +8,15 @@ describe('HighlightDirective', () => {
   beforeEach(() => {
     // Créez un mock pour ElementRef
     elRefMock = {
-      nativeElement: document.createElement('div')
+      nativeElement: document.createElement('div'),
     };
 
     // Créez un mock pour Renderer2
-    rendererMock = jasmine.createSpyObj('Renderer2', ['setStyle', 'addClass', 'removeClass']);
+    rendererMock = jasmine.createSpyObj('Renderer2', [
+      'setStyle',
+      'addClass',
+      'removeClass',
+    ]);
   });
 
   it('should create an instance', () => {
