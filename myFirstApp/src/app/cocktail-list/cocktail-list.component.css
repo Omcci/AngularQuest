@@ -1,4 +1,39 @@
-.cocktail-image {
-    width: 500px;
-    height: auto;
+ul {
+    display: flex;
+    flex-direction: row;
 }
+
+.cocktail-image {
+    width: 250px;
+    height: auto;
+    margin:  22px;
+    border-radius: 12px;
+    
+}
+
+
+.cocktail-container  {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    border: 1px solid black;
+    margin: 36px;
+    border-radius: 12px;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 48px;
+}
+
+
+
+.cocktail-container h2 {
+font-family: monospace;
+font-size: xx-large;
+}
+
+
+.cocktail-container p {
+    font-family: monospace;
+    font-size: small;
+    }
+    

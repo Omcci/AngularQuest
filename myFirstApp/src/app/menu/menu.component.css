@@ -1,23 +1,45 @@
 .menu-container {
     display: flex;
     font-family: monospace;
+    justify-content: center;
+    
 }
 
 .menu-container li {
     list-style: none;
+    text-decoration: none;
     margin: 8px;
     font-size: xx-large;
+    position: relative;
+    display: inline-block;
+    vertical-align: top;  
+
 }
 
 
 .menu-container li a{
+    list-style: none;
+color: black;
     text-decoration: none;
     transform: scale(0.5);
     transition: 0.2s;
 }
 
 .menu-container li a:hover{
-color: lightgrey; 
+color: rgb(113, 97, 97); 
 
    
+}
+
+.menu-container .underline {
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(113, 97, 97);
+    height: 2px;
+    width: 0;
+    transition: width 0.3s;
+ }
+
+ .menu-container li:hover .underline {
+    width: 80% !important
 }
