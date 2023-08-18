@@ -1,9 +1,9 @@
 // cocktail.model.ts
 export class Cocktail {
     constructor(
-      public nom: string,
-      public prix: number,
-      public image: string
+      public name: string,
+      public price: number,
+      public img: string
     ) {}
   }
   

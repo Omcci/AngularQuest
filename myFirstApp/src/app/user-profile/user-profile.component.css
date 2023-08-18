@@ -1,69 +1,69 @@
 .wrapper {
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid black;
+  border-radius: 12px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
+    rgba(0, 0, 0, 0.22) 0px 10px 10px;
+  margin: 56px 0;
 }
 
 .card-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 24px;
 }
 
 .card-container img {
-    border-radius: 12px;
-   border: 1px solid black;
-   box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+  margin: 12px 0;
 }
 
 .card-container p {
-   font-family: monospace;
-   font-size: xx-large;
+  font-family: monospace;
+  font-size: xx-large;
 }
 
 .card-container p:last-of-type {
-    font-family: monospace;
-    font-size: medium;
-    font-style: oblique;
- }
- 
-
-
-.card-container span {
-    font-family: monospace;
-    font-size: xx-large;
- }
-
- .container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  font-family: monospace;
+  font-size: medium;
+  font-style: oblique;
 }
 
-.container input{
-    all: unset;
-    padding: 12px;
-    border-radius: 20px;
-    border: 1px solid black;
-    margin: 16px 0;
+.card-container span {
+  font-family: monospace;
+  font-size: xx-large;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container input {
+  all: unset;
+  padding: 12px;
+  border-radius: 20px;
+  border: 1px solid black;
+  margin: 16px 0;
 }
 
 .container button {
-    all: unset;
-    padding: 12px;
-    border-radius: 20px;
-    border: 1px solid black;
-    margin: 16px 0;
-    background-color: lightgrey;
-    cursor:pointer;
-    font-family: monospace;
+  all: unset;
+  padding: 12px;
+  border-radius: 20px;
+  border: 1px solid black;
+  margin: 16px 0;
+  background-color: lightgrey;
+  cursor: pointer;
+  font-family: monospace;
 }
 
 .container button:hover {
-    background-color: rgb(134, 146, 155);
-
+  background-color: rgb(134, 146, 155);
 }

@@ -15,6 +15,7 @@ import { RouterModule } from '@angular/router';
 import { MenuComponent } from './menu/menu.component';
 import { CocktailListComponent } from './cocktail-list/cocktail-list.component';
 import { CocktailService } from './cocktail.service';
+import { HttpClientModule } from '@angular/common/http';
 
 
 
@@ -34,7 +35,8 @@ import { CocktailService } from './cocktail.service';
     BrowserModule,
     FormsModule,
     BrowserAnimationsModule,
-    RouterModule.forRoot(ROUTES)
+    RouterModule.forRoot(ROUTES),
+    HttpClientModule
 
 
   ],
