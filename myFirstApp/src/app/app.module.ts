@@ -15,6 +15,9 @@ import { MenuComponent } from './menu/menu.component';
 import { CocktailListComponent } from './cocktail-list/cocktail-list.component';
 import { CocktailService } from './cocktail.service';
 import { HttpClientModule } from '@angular/common/http';
+import { ReactiveFormsModule } from '@angular/forms';
+import { UserComponent } from './user/user.component';
+
 
 @NgModule({
   declarations: [
@@ -26,6 +29,8 @@ import { HttpClientModule } from '@angular/common/http';
     MovieListComponent,
     MenuComponent,
     CocktailListComponent,
+    UserComponent,
+    
   ],
   imports: [
     BrowserModule,
@@ -33,6 +38,7 @@ import { HttpClientModule } from '@angular/common/http';
     BrowserAnimationsModule,
     RouterModule.forRoot(ROUTES),
     HttpClientModule,
+    ReactiveFormsModule
   ],
   providers: [CocktailService],
   bootstrap: [AppComponent],

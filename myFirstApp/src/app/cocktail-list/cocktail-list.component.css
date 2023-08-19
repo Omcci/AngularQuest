@@ -12,9 +12,13 @@ ul div {
 
 .cocktail-image {
   width: 250px;
-  height: auto;
+  height: 350px; /* Adjust this value as needed */
+  max-height: 350px;
+
   margin: 22px;
   border-radius: 12px;
+  object-fit: cover; /* This will make sure images cover the space without being stretched */
+
 }
 
 .cocktail-container {
@@ -28,6 +32,7 @@ ul div {
   box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px,
     rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 48px;
   transition: 250ms;
+background-color: white;
 }
 
 .cocktail-container:hover {
